@@ -1,4 +1,4 @@
-# REGEX
+# REGEX: https://regexr.com/
 
 ### Câu 31:  Ký tự Cuối Cùng là "N"?
 
@@ -48,7 +48,7 @@ Yêu cầu: Cho một chuỗi các ký tự, đếm xem có bao nhiêu chữ in 
         capitalLetters("mqeytbbjwqemcdrdsyvq") ➞ 0
 ```
 
-### Câu 34:  Loại phần tử khỏi một mảng
+### Câu 35:  Loại phần tử khỏi một mảng
 
 Yêu cầu: 
         +       Bạn được cho một mảng với các từ ngẫu nhiên nhưng chương trình của bạn không chấp nhận các từ
@@ -58,6 +58,6 @@ Yêu cầu:
 **Ví dụ**
 ```javascript
         accepted(["Ducks", "Bears", "Cats"]) ➞ ["Ducks", "Bears"]
-        accepted(["cars", "trucks", "planes"] ➞ ["cars", "trucks", "planes"])
+        accepted(["cars", "trucks", "planes"]) ➞ ["cars", "trucks", "planes"]
         accepted(["Cans", "Worms", "Bugs", "Cold", "Beans"]) ➞ ["Worms", "Bugs", "Beans"]
 ```
