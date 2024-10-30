@@ -35,8 +35,3 @@ let vidu_03 = amazing("Xyz is amazing.");
 console.log(vidu_01);
 console.log(vidu_02);
 console.log(vidu_03);
-
-let str = "1adasda";
-const pattern = /\D+/gi;
-const isOK = pattern.test(str);
-console.log(isOK);
