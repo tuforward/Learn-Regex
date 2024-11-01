@@ -9,12 +9,12 @@
             ● isLastCharacterN("Piet") ➞ false
             ● isLastCharacterN("Bert") ➞ false
             ● isLastCharacterN("Dean") ➞ true
- */
+*/
 
 function isLastCharacterN(str) {
-    const pattern = /n$/;
+    const regex = /n$/;
 
-    const isValid = pattern.test(str);
+    const isValid = regex.test(str);
     return isValid;
 }
 
