@@ -3,8 +3,8 @@
 ### Câu 1:  "Đếm có bao nhiêu chữ 'D' trong một câu.
 
 Yêu cầu: 
-        -   Tạo hàm đếm số chữ D trong một câu.
-        -   Không phân biệt chữ hoa, chữ thường
+-   Tạo hàm đếm số chữ D trong một câu.
+-   Không phân biệt chữ hoa, chữ thường
 
 **Ví dụ**
 ```javascript
