@@ -3,8 +3,8 @@
 ### Câu 1:  "Đếm có bao nhiêu chữ 'D' trong một câu.
 
 Yêu cầu: 
-        +   Tạo hàm đếm số chữ D trong một câu.
-        +   Không phân biệt chữ hoa, chữ thường
+        -   Tạo hàm đếm số chữ D trong một câu.
+        -   Không phân biệt chữ hoa, chữ thường
 
 **Ví dụ**
 ```javascript
@@ -16,9 +16,9 @@ Yêu cầu:
 ### Câu 2:  Tiếng hét của người Scotland
 
 Yêu cầu: 
-        +   Giọng đọc tiếng Scotland mạnh mẽ khiến các nguyên âm (u, e, o, a, i) khi đọc giống như là đọc chữ "e", vì vậy bạn nên thay thế mọi nguyên âm (u, e, o, a, i) bằng chữ "e".
+        -   Giọng đọc tiếng Scotland mạnh mẽ khiến các nguyên âm (u, e, o, a, i) khi đọc giống như là đọc chữ "e", vì vậy bạn nên thay thế mọi nguyên âm (u, e, o, a, i) bằng chữ "e".
 
-        +   Ngoài ra, do giọng nói mạnh mẽ, vì vậy hãy trả về một chuỗi đã được viết hoa.
+        -   Ngoài ra, do giọng nói mạnh mẽ, vì vậy hãy trả về một chuỗi đã được viết hoa.
 
 **Ví dụ**
 ```javascript
