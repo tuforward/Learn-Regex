@@ -245,6 +245,307 @@ variableValid("full name") ➞ false
 variableValid("FullName") ➞ true
 ```
 
+### Câu 15:  Valid Hex Code (Mã Hex hợp lệ)
+
+Yêu cầu: 
+- Tạo hàm xác định xem một chuỗi có phải là mã hex hợp lệ hay không.
+
+- Mã hex phải bắt đầu bằng phím thăng # và có độ dài chính xác là 6 ký tự.
+
+- Mỗi ký tự phải là một chữ số từ 0-9 hoặc một ký tự chữ cái từ A-F.
+
+- Tất cả các ký tự chữ cái có thể là chữ hoa hoặc chữ thường.
+
+**Ví dụ**
+```javascript
+isValidHexCode("#CD5C5C") ➞ true
+
+isValidHexCode("#EAECEE") ➞ true
+
+isValidHexCode("#eaecee") ➞ true
+
+isValidHexCode("#CD5C58C") ➞ false
+
+isValidHexCode("#CD5C5Z") ➞ false
+
+isValidHexCode("#CD5C&C") ➞ false
+
+isValidHexCode("CD5C5C") ➞ false
+```
+
+### Câu 16:  Khoảng trắng giữa chữ thường và chữ hoa
+
+Yêu cầu: Viết một hàm chèn một khoảng trắng giữa mỗi cặp ký tự trong đó ký tự thứ nhất là chữ thường và ký tự thứ hai là chữ hoa.
+
+**Ví dụ**
+```javascript
+insertWhitespace("SheWalksToTheBeach") ➞ "She Walks To The Beach"
+
+insertWhitespace("MarvinTalksTooMuch") ➞ "Marvin Talks Too Much"
+
+insertWhitespace("TheGreatestUpsetInHistory") ➞ "The Greatest Upset In History"
+```
+
+### Câu 17:  Có bao nhiêu nguyên âm?
+
+Yêu cầu:
+- Tạo một hàm nhận vào một chuỗi và trả về số lượng nguyên âm có trong chuỗi đó.
+
+- a, e, i, o, u được coi là nguyên âm.
+
+- Tất cả các trường hợp kiểm tra đều là một từ và chỉ chứa các ký tự chữ cái.
+
+**Ví dụ**
+```javascript
+countVowels("Celebration") ➞ 5
+
+countVowels("Palm") ➞ 1
+
+countVowels("Prediction") ➞ 4
+```
+
+### Câu 18:  Tìm bomb
+
+Yêu cầu: Tạo một hàm để tìm từ "bomb" trong chuỗi được cung cấp (không phân biệt chữ hoa và chữ thường). Nếu tìm thấy, trả về "Duck!!!", ngược lại trả về "There is no bomb, relax.".
+
+**Ví dụ**
+```javascript
+bomb("There is a bomb.") ➞ "Duck!!!"
+
+bomb("Hey, did you think there is a bomb?") ➞ "Duck!!!"
+
+bomb("This goes boom!!!") ➞ "There is no bomb, relax."
+```
+
+### Câu 19:  Xóa nguyên âm khỏi chuỗi
+
+Yêu cầu: 
+- Tạo một hàm nhận vào một chuỗi và trả về một chuỗi mới với tất cả các nguyên âm được loại bỏ.
+
+- a, e, i, o, u được coi là nguyên âm.
+
+**Ví dụ**
+```javascript
+removeVowels("I have never seen a thin person drinking Diet Coke.")
+➞ " hv nvr sn  thn prsn drnkng Dt Ck."
+
+removeVowels("We're gonna build a wall!")
+➞ "W'r gnn bld  wll!"
+
+removeVowels("Happy Thanksgiving to all--even the haters and losers!")
+➞ "Hppy Thnksgvng t ll--vn th htrs nd lsrs!"
+```
+
+### Câu 20:  Trả về chỉ mục của nguyên âm đầu tiên
+
+Yêu cầu: 
+- Viết một hàm trả về chỉ số của nguyên âm đầu tiên trong một chuỗi.
+
+- a, e, i, o, u được coi là nguyên âm.
+
+**Ví dụ**
+```javascript
+firstVowel("apple") ➞ 0
+
+firstVowel("hello") ➞ 1
+
+firstVowel("STRAWBERRY") ➞ 3
+
+firstVowel("pInEaPPLe") ➞ 1
+```
+
+**Ghi chú:**
+- Đầu vào sẽ là các từ đơn.
+- Các ký tự trong từ sẽ ở dạng chữ hoa hoặc chữ thường.
+- "y" không được coi là nguyên âm.
+- Đầu vào luôn chứa một nguyên âm. 
+
+### Câu 21:  Hashes and Pluses
+
+Yêu cầu: Tạo một hàm trả về số lượng ký tự "#" và "+" trong một chuỗi.
+
+**Ví dụ**
+```javascript
+hashPlusCount("###+") ➞ [3, 1]
+
+hashPlusCount("##+++#") ➞ [3, 3]
+
+hashPlusCount("#+++#+#++#") ➞ [4, 6]
+
+hashPlusCount("") ➞ [0, 0]
+```
+
+**Ghi chú:**
+- Trả về [0, 0] cho một chuỗi rỗng.
+- Trả về theo thứ tự: [hashes, pluses].
+
+### Câu 22:  Chuyển đổi các từ thành chuỗi nhị phân
+
+Yêu cầu: Viết một hàm biến đổi tất cả các chữ cái từ [a, m] thành 0 và các chữ cái từ [n, z] thành 1 trong một chuỗi.
+
+**Ví dụ**
+```javascript
+convertBinary("house") ➞ "01110"
+
+convertBinary("excLAIM") ➞ "0100000"
+
+convertBinary("moon") ➞ "0111"
+```
+
+### Câu 23:  Viết hoa chữ cái đầu tiên của mỗi từ
+
+Yêu cầu: Tạo một hàm nhận một chuỗi làm đối số và chuyển đổi ký tự đầu tiên của mỗi từ thành chữ hoa. Trả về chuỗi đã được định dạng mới.
+
+**Ví dụ**
+```javascript
+makeTitle("This is a title") ➞ "This Is A Title"
+
+makeTitle("capitalize every word") ➞ "Capitalize Every Word"
+
+makeTitle("I Like Pizza") ➞ "I Like Pizza"
+
+makeTitle("PIZZA PIZZA PIZZA") ➞ "PIZZA PIZZA PIZZA"
+```
+
+### Câu 24:  Xóa các chữ cái ABC
+
+Yêu cầu:
+- Tạo một hàm để loại bỏ các ký tự "a", "b" và "c" từ chuỗi được chuyền vào đối số và trả về chuỗi mới đã được sửa đổi.
+
+- Nếu chuỗi được cung cấp không chứa "a", "b" hoặc "c", trả về null.
+
+**Ví dụ**
+```javascript
+removeABC("This might be a bit hard") ➞ "This might e  it hrd"
+
+removeABC("hello world!") ➞ null
+
+removeABC("") ➞ null
+```
+
+### Câu 25:  Nguyên âm đứt đoạn
+
+Yêu cầu: Viết một hàm nhận vào một chuỗi và thêm dấu gạch ngang bên trái và bên phải của mỗi nguyên âm (a, e, i, o, u).
+
+**Ví dụ**
+```javascript
+dashed("28Tech") ➞ "28T-e-ch"
+
+dashed("Carpe Diem") ➞ "C-a-rp-e- D-i--e-m"
+
+dashed("Fight for your right to party!") ➞ "F-i-ght f-o-r y-o--u-r r-i-ght t-o- p-a-rty!"
+```
+
+**Ghi chú:**
+- Một chuỗi có thể chứa nguyên âm viết hoa và viết thường.
+- Y không được coi là một nguyên âm.
+
+### Câu 26:  Thay thế nguyên âm bằng ký tự khác
+
+Yêu cầu: 
+- Tạo một hàm nhận vào một chuỗi và thay thế các nguyên âm bằng một ký tự khác.
+- a = 1
+- e = 2
+- i = 3
+- o = 4
+- u = 5
+
+**Ví dụ**
+```javascript
+replaceVowel("karachi") ➞ "k1r1ch3"
+
+replaceVowel("chembur") ➞ "ch2mb5r"
+
+replaceVowel("khandbari") ➞ "kh1ndb1r3"
+```
+
+### Câu 27:  Đếm các chữ cái và chữ số
+
+Yêu cầu: Viết một hàm nhận vào một chuỗi và tính số lượng ký tự chữ cái và chữ số có trong chuỗi đó. Trả về kết quả dưới dạng một đối tượng.
+
+**Ví dụ**
+```javascript
+countAll("Hello World") ➞ { "LETTERS":  10, "DIGITS": 0 }
+
+countAll("H3ll0 Wor1d") ➞ { "LETTERS":  7, "DIGITS": 3 }
+
+countAll("149990") ➞ { "LETTERS": 0, "DIGITS": 6 }
+```
+
+**Ghi chú:**
+- Các chuỗi kiểm tra chỉ chứa các ký tự chữ và số.
+
+- Khoảng trắng không phải là chữ cái.
+
+### Câu 28:  Đếm trạng từ
+
+Yêu cầu: 
+- Viết một hàm đếm số lượng trạng từ trong một câu.
+
+- Một trạng từ là một từ kết thúc bằng "ly".
+
+**Ví dụ**
+```javascript
+countAdverbs("She ran hurriedly towards the stadium.") ➞ 1
+
+countAdverbs("She ate the lasagna heartily and noisily.") ➞ 2
+
+countAdverbs("He hates potatoes.") ➞ 0
+
+countAdverbs("He was happily, crazily, foolishly over the moon.") ➞ 3
+```
+
+**Ghi chú:**
+- KHÔNG đếm các từ mà "ly" ở đầu hoặc ở giữa (ví dụ: Lysol, Illya).
+
+- Với mục đích của bài tập này, bỏ qua sự phức tạp của ngôn ngữ Anh (một số tính từ cũng kết thúc bằng "ly").
+
+### Câu 29:  Letters Only 2 (Chỉ chữ cái 2)
+
+Yêu cầu: Kiểm tra xem chuỗi đã cho có chỉ chứa các ký tự và dấu cách và tất cả các ký tự có đều viết thường không.
+
+**Ví dụ**
+```javascript
+lettersOnly("JAVACRIPT") ➞ false
+
+lettersOnly("javascript") ➞ true
+
+lettersOnly("12321313") ➞ false
+
+lettersOnly("i have spaces") ➞ true
+
+lettersOnly("i have numbers(1-10)") ➞ false
+
+lettersOnly("") ➞ false
+```
+
+**Ghi chú:**
+- Đối số trống sẽ luôn trả về false.
+
+- Giá trị đầu vào có thể bao gồm các ký tự kết hợp (ký tự đặc biệt, chữ cái, số).
+
+### Câu 30:  Hạn chế chữ và số
+
+Yêu cầu: 
+- Tạo một hàm trả về true nếu chuỗi đã cho có bất kỳ một trong những điều sau:
+        - Chỉ chứa các chữ cái và không có số nào.
+        - Chỉ chứa các số và không có chữ cái nào.
+
+- Nếu một chuỗi có cả số và chữ cái, hoặc chứa các ký tự không phù hợp sẽ trả về false.
+
+**Ví dụ**
+```javascript
+alphanumericRestriction("Bold") ➞ true
+
+alphanumericRestriction("123454321") ➞ true
+
+alphanumericRestriction("H3LL0") ➞ false
+
+alphanumericRestriction("ed@bit") ➞ false
+```
+
+**Ghi chú: Bất kỳ chuỗi nào chứa khoảng trắng hoặc rỗng đều nên trả về false.**
+
 ### Câu 31:  Ký tự Cuối Cùng là "N"?
 
 Yêu cầu: Tạo ra một hàm nhận một chuỗi (một tên ngẫu nhiên). Nếu ký tự cuối cùng của tên là "n", trả về true,
@@ -305,4 +606,20 @@ Yêu cầu:
 accepted(["Ducks", "Bears", "Cats"]) ➞ ["Ducks", "Bears"]
 accepted(["cars", "trucks", "planes"]) ➞ ["cars", "trucks", "planes"]
 accepted(["Cans", "Worms", "Bugs", "Cold", "Beans"]) ➞ ["Worms", "Bugs", "Beans"]
+```
+
+### Câu 36:  Kiểm tra email có hợp lệ không
+
+Yêu cầu: Viết một hàm cho người dùng nhập vào email và kiểm tra xem email có hợp lệ không
+
+**Ví dụ**
+```javascript
+validateEmail("levana@gmail.com") ➞ true
+validateEmail("levanb12345@gmail.com") ➞ true
+validateEmail("levanc12.34@gmail.com") ➞ true
+validateEmail("levand@28tech.com.vn") ➞ true
+validateEmail("levane.123@stu.28tech.com.vn") ➞ true
+validateEmail("levane.123.stu.28tech.com.vn") ➞ false
+validateEmail("levane.123@gmail") ➞ false
+validateEmail("levane.123@gmail.") ➞ false
 ```

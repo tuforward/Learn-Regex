@@ -1,14 +1,14 @@
 /**
-        Ký tự Cuối Cùng là "N"?
+    Ký tự Cuối Cùng là "N"?
 
-        Yêu cầu: Tạo ra một hàm nhận một chuỗi (một tên ngẫu nhiên). Nếu ký tự cuối cùng của tên là "n", trả về true,
-        ngược lại trả về false
+    Yêu cầu: Tạo ra một hàm nhận một chuỗi (một tên ngẫu nhiên). Nếu ký tự cuối cùng của tên là "n", trả về true,
+    ngược lại trả về false
 
-        Ví dụ:
-            ● isLastCharacterN("Aiden") ➞ true
-            ● isLastCharacterN("Piet") ➞ false
-            ● isLastCharacterN("Bert") ➞ false
-            ● isLastCharacterN("Dean") ➞ true
+    Ví dụ:
+        ● isLastCharacterN("Aiden") ➞ true
+        ● isLastCharacterN("Piet") ➞ false
+        ● isLastCharacterN("Bert") ➞ false
+        ● isLastCharacterN("Dean") ➞ true
 */
 
 function isLastCharacterN(str) {

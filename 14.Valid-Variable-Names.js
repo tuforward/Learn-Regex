@@ -24,6 +24,20 @@
         variableValid("FullName") ➞ true
 */
 
-const variableValid = (str) => {
-    
-}
+const variableValid = (name) => {
+    // Sử dụng regex để kiểm tra xem tên biến có hợp lệ hay không
+    // const regex = /^[a-zA-Z][\w]+$/;
+    const regex = /^[a-zA-Z][a-zA-Z0-9_]+$/;
+    const result = regex.test(name)
+    return result;
+  }
+  
+  // Kiểm tra các ví dụ
+  console.log(variableValid("fullName")); // ➞ true
+  console.log(variableValid("full_name")); // ➞ true
+  console.log(variableValid("fullname")); // ➞ true
+  console.log(variableValid("2fullName")); // ➞ false
+  console.log(variableValid("full-name")); // ➞ false
+  console.log(variableValid("full name")); // ➞ false
+  console.log(variableValid("FullName")); // ➞ true
+  console.log(variableValid("Full.Name")); // ➞ false
